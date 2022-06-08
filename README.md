@@ -2,6 +2,8 @@
 
 This is a simplified version of the code used in [Learning more skills through optimistic exploration][ICLR2022] (appearing at ICLR 2022).
 
+[ICLR2022]: https://iclr.cc/virtual/2022/poster/6475
+
 This Colab trains an agent with a tabular Q function and a tabular discriminator ensemble on a scaled down version of the Four Rooms environment. It will parallelize across all available devices. We recommend training on a GPU backend or Colab Pro TPU backend.
 
 The environment has 24 states. With 8 transitions, all but one state is reachable from the initial state in the top left corner. This means that at most 23 distinguishable skills can be learned.
